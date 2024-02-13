@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+
+    <script>
+        
+document.addEventListener("DOMContentLoaded", function() {
+var button1=document.getElementById("bt1");
+// Get the button element with the ID "bt2"
+var button2 = document.getElementById("bt2");
+
+// Add a click event listener to the button
+button1.addEventListener("click", function() {
+// Navigate to a certain link when the button is clicked
+window.location.href = "http://localhost:8080/user/new"; // Replace "https://example.com" with your desired link
+});
+
+
+button2.addEventListener("click", function() {
+// Navigate to a certain link when the button is clicked
+window.location.href = "http://localhost:8080/user"; // Replace "https://example.com" with your desired link
+});
+});
+
+
+    </script>
+</head>
+<body>
+    <h2>The total number of user are:<%=count%></h2>
+    <button id="bt1">Join Our Family</button>
+    <button id="bt2">View our family</button>
+   
+</body>
+</html>
